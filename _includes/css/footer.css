@@ -1,0 +1,10 @@
+/*Footer icon design*/
+.footerIcon img{
+	width: 25px;
+	height: 25px;
+}
+.footerIcon{
+	text-align: center;
+	letter-spacing: 15px;
+	position:static;
+}

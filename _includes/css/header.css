@@ -38,22 +38,3 @@
 	padding-left:2em;
 	padding-right: 2em;
 }
-/*Content*/
-.content{
-	padding-bottom: 300px;
-}
-
-/*Footer icon design*/
-.footerIcon img{
-	width: 25px;
-	height: 25px;
-}
-.footerIcon{
-	text-align: center;
-	letter-spacing: 15px;
-	position:static;
-}
-/*All content will fixed width */
-.allRequire{
-	
-}
