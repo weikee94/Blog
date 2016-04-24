@@ -4,5 +4,13 @@ title: Home
 ---
 <!-- use default layouts -->
 
-<h1>Hello</h1>
-
+<div class="container">
+	<div class="row">
+		<img src="images/note.png">
+		{% for posts in site.posts %}
+		<a href="{{site.baseurl}}/blog/">
+			{{ posts.date | date: '%B %d, %Y' }}
+			{{ posts.title }}</a>
+		{% endfor %}
+	</div>
+</div>

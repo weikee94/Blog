@@ -13,6 +13,12 @@
 	font-family: 'PT Sans';
 	font-weight: 500;
 }
+
+.directories a:hover{
+	color:cornflowerblue;
+	transition: 1.3s;
+}
+
 .sub_title{
 	text-align: center;
 	font-size: 14px;
@@ -38,3 +44,4 @@
 	padding-left:2em;
 	padding-right: 2em;
 }
+

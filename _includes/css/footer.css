@@ -8,3 +8,12 @@
 	letter-spacing: 15px;
 	position:static;
 }
+/*
+.footerIcon a:hover{
+	background-color:powderblue;
+	transition: 1.2s;
+}
+.footerIcon a{
+	border-radius: 3px;
+	background-color: azure;
+}*/

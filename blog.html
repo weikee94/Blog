@@ -3,3 +3,8 @@ layout: default
 title: Blog
 ---
 
+
+{% for posts in site.posts %}
+{{posts.title}}
+{{posts.content}}
+{% endfor %}
