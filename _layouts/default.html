@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Wei Kee's Blog</title>
+	<title>{% if page.title %}{{page.title}} · {% endif %}Wei Kee</title>
 	<link href="{{site.baseurl}}/css/bootstrap.min.css" rel="stylesheet">
 	<link href="{{site.baseurl}}/css/all.css" rel="stylesheet">
 	<link rel="icon" href="images/icon.png">
@@ -17,7 +17,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="title">
-				<img src="images/avatar.png" id="centerImage">
+				<img src="{{site.baseurl}}/images/avatar.png" id="centerImage">
 				Wei Kee
 				<div class="sub_title">
 					Love Building Things With Code
@@ -30,13 +30,13 @@
 				<a href="{{site.baseurl}}/"> Home
 				</a>
 				<span class="seperate_line">|</span>
-				<a href="{{site.baseurl}}/blog.html">Blog
+				<a href="{{site.baseurl}}/blog/">Blog
 				</a>
 				<span class="seperate_line">|</span>
-				<a href="{{site.baseurl}}/about.html">About
+				<a href="{{site.baseurl}}/about/">About
 				</a>
 				<span class="seperate_line">|</span>
-				<a href="{{site.baseurl}}/portfolio.html">Portfolio </a>
+				<a href="{{site.baseurl}}/portfolio/">Portfolio </a>
 			</div>
 		</div>
 	</div>
@@ -63,10 +63,10 @@
 	<div class="container">
 		<div class="row col-md-12">
 			<div class="footerIcon col-md-6 col-md-offset-3">
-				<a href="https://www.facebook.com/profile.php?id=100009712415658"><img src="images/facebook.png"></a>
-				<a href="https://github.com/vickyhaw94"><img src="images/github.png"></a>
-				<a href="https://aboutme.google.com/?referer=gplus"><img src="images/googleplus.png"></a>
-				<a href="http://www.linkedin.com/in/wei-kee-haw-2806b8109?trk=nav_responsive_tab_profile_pic"><img src="images/linkedin.png"></a>
+				<a href="https://www.facebook.com/profile.php?id=100009712415658"><img src="{{site.baseurl}}/images/facebook.png"></a>
+				<a href="https://github.com/vickyhaw94"><img src="{{site.baseurl}}/images/github.png"></a>
+				<a href="https://aboutme.google.com/?referer=gplus"><img src="{{site.baseurl}}/images/googleplus.png"></a>
+				<a href="http://www.linkedin.com/in/wei-kee-haw-2806b8109?trk=nav_responsive_tab_profile_pic"><img src="{{site.baseurl}}/images/linkedin.png"></a>
 			</div>
 		</div>
 	</div>
@@ -75,6 +75,6 @@
 	
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="{{site.baseurl}}/js/bootstrap.min.js"></script>
 </body>
 </html>
