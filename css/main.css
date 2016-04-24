@@ -1,0 +1,60 @@
+/*Center image and title*/
+.title img{
+	width: 30px;
+	height: 30px;
+	display: block;
+	margin: 0 auto;
+}
+.title{
+	text-align: center;
+	margin-top: 1em;
+	font-size: 64px;
+	text-transform: capitalize;
+	font-family: 'PT Sans';
+	font-weight: 500;
+}
+.sub_title{
+	text-align: center;
+	font-size: 14px;
+	letter-spacing: 2px;
+	text-indent: 6px;
+	font-family: 'Josefin Sans';
+}
+/*Center the directories*/
+.directories a{
+	text-decoration: none;
+	color:#aaa;
+}
+.directories{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 3px;
+	font-family: 'Josefin Sans';
+	font-weight:400;
+	padding-top:4em;
+}
+.seperate_line{
+	padding-left:2em;
+	padding-right: 2em;
+}
+/*Content*/
+.content{
+	padding-bottom: 300px;
+}
+
+/*Footer icon design*/
+.footerIcon img{
+	width: 25px;
+	height: 25px;
+}
+.footerIcon{
+	text-align: center;
+	letter-spacing: 15px;
+	position:static;
+	bottom:0;
+}
+/*All content will fixed width */
+.allRequire{
+	
+}

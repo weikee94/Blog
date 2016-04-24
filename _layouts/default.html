@@ -5,9 +5,76 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Wei Kee's Blog</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link rel="icon" href="images/icon.png">
+	
 </head> 
 <body>
-	<!-- this is jekyll know where to put the content -->
-	{{content}}
+<!-- this is jekyll know where to put the content -->
+<!-- header -->	
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="title">
+				<img src="images/avatar.png" id="centerImage">
+				Wei Kee
+				<div class="sub_title">
+					Love Building Things With Code
+				</div>
+			</div>
+		</div>	
+		
+		<div class="row">
+			<div class="directories">
+				<a href="{{site.baseurl}}/home.html"> Home
+					<span class="seperate_line">|</span>
+				</a>
+				<a href="{{site.baseurl}}/blog.html">Blog
+					<span class="seperate_line">|</span>
+				</a>
+				<a href="{{site.baseurl}}/about.html">About
+					<span class="seperate_line">|</span>
+				</a>
+				<a href="{{site.baseurl}}/portfolio.html">Portfolio </a>
+			</div>
+		</div>
+	</div>
+	
+</header>
+<hr>	
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="allRequire col-md-6">
+			{{content}}
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+</div>
+
+
+<div class="content">
+</div>
+	
+
+<footer>
+	<div class="container">
+		<div class="row col-md-12">
+			<div class="footerIcon col-md-6 col-md-offset-3">
+				<a href="https://www.facebook.com/profile.php?id=100009712415658"><img src="images/facebook.png"></a>
+				<a href="https://github.com/vickyhaw94"><img src="images/github.png"></a>
+				<a href="https://aboutme.google.com/?referer=gplus"><img src="images/googleplus.png"></a>
+				<a href="http://www.linkedin.com/in/wei-kee-haw-2806b8109?trk=nav_responsive_tab_profile_pic"><img src="images/linkedin.png"></a>
+			</div>
+		</div>
+	</div>
+</footer>
+	
+	
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
