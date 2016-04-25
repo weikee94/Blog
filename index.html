@@ -8,7 +8,7 @@ title: Home
 	<div class="row">
 		<img src="images/note.png">
 		{% for posts in site.posts %}
-		<a href="{{site.baseurl}}/blog/">
+		<a href="{{site.baseurl}}/blog/_posts/2016-04-24-First-Jekyll-Post/">
 			{{ posts.date | date: '%B %d, %Y' }}
 			{{ posts.title }}</a>
 		{% endfor %}

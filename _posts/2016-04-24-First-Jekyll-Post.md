@@ -1,8 +1,8 @@
 ---
-layout: blog
+layout: post
 title: First Post of Jekyll
 category: tech
-date: April 24, 2016
+date: 2016-04-24
 ---
 
 # Hello World
