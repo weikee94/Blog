@@ -1,7 +1,6 @@
 ---
 layout: post
 title: First Post of Jekyll
-
 date: 2016-04-24
 ---
 
