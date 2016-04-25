@@ -3,3 +3,13 @@
 .content{
 	padding-bottom: 300px;
 }
+
+.blogTag a{
+	text-decoration: none;
+}
+
+.blogTag{
+	font-family: "Source Sans Pro";
+	font-size: 18px;
+	letter-spacing: 2px;
+}

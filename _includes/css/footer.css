@@ -5,15 +5,20 @@
 }
 .footerIcon{
 	text-align: center;
-	letter-spacing: 15px;
+	letter-spacing: 4px;
 	position:static;
 }
-/*
-.footerIcon a:hover{
-	background-color:powderblue;
-	transition: 1.2s;
-}
+
 .footerIcon a{
-	border-radius: 3px;
-	background-color: azure;
-}*/
+	border-radius: 8px;
+	background-color: lightgrey;
+	padding-left: 10px;
+	text-decoration: none;
+	color:white;
+	margin-left:10px;
+}
+
+.footerIcon a:hover{
+	background: skyblue;
+	transition: 1.4s;
+}
