@@ -6,9 +6,9 @@ title: Home
 
 <div class="container">
 	<div class="row">
-		<img src="images/note.png">
+		<img src="{{site.baseurl}}images/note.png">
 		{% for posts in site.posts %}
-		<a href="{{site.baseurl}}/blog/_posts/2016-04-24-First-Jekyll-Post/">
+		<a href="{{ posts.url }}" title="{{ posts.title }}">
 			{{ posts.date | date: '%B %d, %Y' }}
 			{{ posts.title }}</a>
 		{% endfor %}

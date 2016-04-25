@@ -1,11 +1,11 @@
 ---
 layout: post
 title: First Post of Jekyll
-category: tech
+
 date: 2016-04-24
 ---
 
-# Hello World
+Hello World
 This is my first post of personal website using **jekyll** and host on **github gh-pages.**
 
 #### Markdown Syntax 
