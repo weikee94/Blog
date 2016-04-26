@@ -2,6 +2,7 @@
 layout: post
 title: First Post of Jekyll
 date: 2016-04-24
+comments: true
 ---
 
 Hello World
@@ -90,5 +91,6 @@ i.e. ~~Delete~~
  alert(a)
  ```
  
-
+ 
+ 
 	
