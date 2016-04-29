@@ -58,9 +58,11 @@ Every variable is occupy one line because the difference between sass and scss i
 i.e. **$variableOne: 100px**
 i.e. **$variableTwo: 150px**
 
+![alt text]({{ site.baseurl }}/images/sass1.png)
+
 ### Demonstration SCSS -> CSS
     'scss'
-	![alt text]({{ site.url }}/images/sass1.png)
+	
 
     'css'
 	![alt text]({{ site.url }}/images/sass2.png)
