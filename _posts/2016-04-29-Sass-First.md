@@ -72,7 +72,7 @@ i.e. **$variableTwo: 150px**
 
 ### Demonstration SCSS -> CSS
 ![alt text]({{ site.baseurl }}/images/sass1.png)
-![alt text]({{ site.url }}/images/sass2.png)
+![alt text]({{ site.baseurl }}/images/sass2.png)
 
 
     
