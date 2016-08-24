@@ -53,3 +53,10 @@
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
+.element{
+	font-size: 4.75em;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+}
