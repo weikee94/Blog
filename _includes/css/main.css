@@ -31,7 +31,7 @@
 	font-family: serif;
 	color: #4D4D4D;
 }
-
+/**
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -53,10 +53,10 @@
     50% { opacity:0; }
     100% { opacity:1; }
 }
-
+**/
 .element{
 	font-size: 4.75em;
 	font-weight: 300;
 	color: #484f5f;
-	
+	text-align: center;
 }
