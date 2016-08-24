@@ -57,11 +57,7 @@
 .element{
 	font-size: 4.75em;
 	font-weight: 300;
-	margin: auto;
-	display: inline-block;
-	margin-left:1em;
-    margin-right:1em;
-    margin-top:1em;
-    margin-bottom:1em;
 	color: #484f5f;
+	display:block;
+	text-align: center;
 }
