@@ -57,7 +57,7 @@
 .element{
 	font-size: 4.75em;
 	font-weight: 300;
-
-
+	margin: 0 auto;
+	left: 50%;
 	color: #484f5f;
 }
