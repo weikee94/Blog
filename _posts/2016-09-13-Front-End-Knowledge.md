@@ -8,6 +8,7 @@ comments: true
 ## Front end developer interview question
 
 # HTML
+
 #### What is three way handshake?
 	A three-way-handshake is a method used in TCP/IP network to create a connection between a local host/client and server. Is is a three-step method that requires both client and the server to exchange SYN (Synchronize Sequence Numbers) and ACK (Acknowledgment) packets before actual data communication begins.
 
