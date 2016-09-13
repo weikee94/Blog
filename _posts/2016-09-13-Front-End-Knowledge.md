@@ -7,7 +7,7 @@ comments: true
 
 ## Front end developer interview question
 
-	
+# HTML
 #### What is three way handshake?
 	A three-way-handshake is a method used in TCP/IP network to create a connection between a local host/client and server. Is is a three-step method that requires both client and the server to exchange SYN (Synchronize Sequence Numbers) and ACK (Acknowledgment) packets before actual data communication begins.
 
@@ -50,6 +50,30 @@ comments: true
 	* Cookies are stored in the user's hard disk and sessions are not
 	* A cookie can keep information in the user's browser until deleted or expired while session is available as long as the browser is opened
 	* Sessions are popularly used as there is a chance of your cookies getting blocked if the user browser security setting is set high 
+	
+#### Difference between sessionStorage and localStorage
+	sessionStorage and localStorage both extend Storage. The data stores in localStorage persists until explicitly deleted. Changes made are saved and available for all current and future visits to the site. For sessionStorage change are only availabel for current page and once the window is closed the storage is deleted.
+	
+#### Different input attributes
+	* Value attribute specifies the initial value for an input field.
+	* Readonly attribute specifie that the input field is read only.
+	* Disabled attribute is unusable and un-clickable and its value will not be sent when submittig the form.
+	* Size attribute specifies the size in characters for the input field.
+	* Autofocus attributes specifies that the input field should automatically get focus when the page loads.
+	* Placeholder attribute specifies a hint that describes the expected value of an input filed.
+	* Required attribute specifies that an input field must be filled out before submitting the form.
+	
+#### How do browsers render a web page?
+	* The DOM(Document Object Model) is formed from the HTML that is received from a server.
+	* Styles are loaded and parsed forming a CSSOM (CSS Object Model).
+	* On top of DOM and CSSOM, a rendering tree is created which is a set of objects to be rendered. Render tree reflects the DOM structure except for the invisible elements like <head> tag or element that have display:none. Each text string is represented in the rendering tree as a separate renderer and each of the rendering object contains its corresponding DOM object. In other words, the render tree describes the visual representation of a DOM.
+	* For each render tree element, its coordinates are calculated which is called "layout". Browsers use a flow method which only required one pass to layout al the elements.
+	* Finally, this gets actually displayed in a browser window and the process called "painting".
+	
+#### What is iFrame tag used for?
+	An inline frame which usde to embed another document within the current HTML document.
+	
+
 	
 # CSS
 
@@ -110,3 +134,48 @@ comments: true
 	
 	Visibility: hidden means that the tag is not visible but space is allocated for it on the page. The tag is rendered it just isn't seen on the page.
 	
+#### Static, absolute, relative, fixed? How do they differ?
+	* Static which is the default for every single page element and it doesn't mean much it just means that the element will flow into the page as it normally would.
+	
+	* Relative is "relative to itself". Try to imagine if you set position: relative; but no other positioning attributes (top, left, bottom or right), it will no effect on it's positioning at all but if you do give it some other positioning attributes like top: 10px; it will shift position 10 pixels down.
+	
+	* Absolute which allows you to literally place any page element exactly where you want it. You use the positioning top, left, bottom and right to set the location. One thing to remember which these values will be relative to the next parent element with relative or absolute positioning. If there is no such parent, it will default all the way back up to the <html> element itself meaning it will be placed relatively to the page itself.
+	
+	* Fixed position element is positioned relative to the viewport or the browser window itself. The viewport doesn't change when the window is scrolled so a fixed positioned element will stay right where it is when the page is scrolled. 
+	
+
+# Javascript
+
+#### Difference between call and apply 
+	Both can be called on functions which they run in the context of the first argument. In call the subsequent arguments are passed in to the function as they are, while apply expects the second argument to be an array that it unpacks as arguments for the called function. 
+	
+#### What is JSONP?
+	JSONP is stands for JSON with Padding is a JSON extension used by web developers to overcome the cross-domain problems which we normally are not able to send AJAX(XMLHttpRequest) request to a different domain. It works because the script tag does not have the limitation of the domain. 
+	
+#### How to load scripts asynchronously?
+
+	Method One
+	(function(){
+		var s = document.createElement('script');
+		s.type = 'text/javascript';
+		s.async = true;
+		s.src = 'http://yourdomain.com/script.js';
+		var x = document.getElementsByTagName('script')[0];
+		x.parentNode.insertBefore(s,x);
+	})();
+	
+	Method Two (used when there are ```onload``` happens)
+	(function(){
+		function async_load(){
+			var s = document.createElement('script');
+			s.type = 'text/javascript';
+			s.async = true;
+			s.src = 'http://yourdomain.com/script.js';
+			var x = document.getElementsByTagName('script')[0];
+			x.parentNode.insertBefore(s,x);
+		}
+		if(window.attachEvent)
+			window.attachEvent('onload', async_load);
+		else
+			window.addEventListener('load', async_load, false);
+	})();
