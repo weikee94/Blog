@@ -10,11 +10,13 @@ comments: true
 # HTML
 
 #### What is three way handshake?
-	A three-way-handshake is a method used in TCP/IP network to create a connection between a local host/client and server. Is is a three-step method that requires both client and the server to exchange SYN (Synchronize Sequence Numbers) and ACK (Acknowledgment) packets before actual data communication begins.
+A ```three-way-handshake``` is a method used in ```TCP/IP network``` to create a connection between a local host/client and server. Is is a ```three-step``` method that requires both client and the server to exchange ```SYN (Synchronize Sequence Numbers)``` and ```ACK (Acknowledgment)``` packets before actual data communication begins.
 
-	* A client node send a SYN (syn=j) packet over an IP network to a server on the same or an external network and the status will be SYN_SENT.
-	* The target server open ports that can accept and initiate new connections. When the server receives the SYN packet from the client node, it will verify the SYN (ack = j+1) then responds and return a confirmation receipt which either ACK packet or SYN/ACk packet and the status will be SYN_RECV.
-	* The client node receives the SYN/ACK from the server and responds with an ACK packet (ack = k+1) and the status will be ESTABLISHED. 
+* A client node send a SYN (syn=j) packet over an IP network to a server on the same or an external network and the status will be SYN_SENT.
+
+* The target server open ports that can accept and initiate new connections. When the server receives the SYN packet from the client node, it will verify the SYN (ack = j+1) then responds and return a confirmation receipt which either ACK packet or SYN/ACk packet and the status will be SYN_RECV.
+
+* The client node receives the SYN/ACK from the server and responds with an ACK packet (ack = k+1) and the status will be ESTABLISHED. 
 
 #### What is OSI?
 	OSI is stands for Open System Interconnection which is a reference model for how applications can communicate over a network and that consists of the following 7 layers.
@@ -74,6 +76,28 @@ comments: true
 #### What is iFrame tag used for?
 	An inline frame which usde to embed another document within the current HTML document.
 	
+#### Difference between src and href?
+```href (Hypertext Reference)``` attributes specifies the location of a Web resource thus defining a link or relationship between the document and the destination resource by this attribute.
+
+	<link href="style.css" rel="stylesheet" />
+
+```src (Source)``` attribute just embeds the resource in the current document at the location of the element's definition.
+
+	<script src="script.js"></script>
+	
+#### What is progressive enhancement and graceful degradation?
+```Progressive enhancement``` start by establishing a basic level of user experience that all browsers will be able to provide when rendering your web site, but you also build in more advanced functionality that will automatically be available to browsers that can use it.
+
+```Graceful degradation``` is that is provide certain level of user experience in more modern browsers but it will also degrade gracefully to a lower level of user in experience in older browsers.
+
+#### Several web browser engine (layout engine or rendering engine)
+
+IE: ```trident```
+Firefox: ```gecko```
+Safari: ```webkit```
+Opera: ```blink```
+Chrome: ```blink```
+
 
 	
 # CSS
@@ -144,6 +168,18 @@ comments: true
 	
 	* Fixed position element is positioned relative to the viewport or the browser window itself. The viewport doesn't change when the window is scrolled so a fixed positioned element will stay right where it is when the page is scrolled. 
 	
+#### What is inline element? block element? void element?
+	Inline element: a,b,span,img,input,strong,select,label,em,button,textarea
+	Block element: div,ul,li,dl,dt,dd,p,h1-h6,blockquote
+	Void element: br,meta,hr,link,input,img
+	
+#### What is CSS Box Model?
+	All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout. It consists of margins, borders, padding and actual content. 
+	
+#### Difference between px,em and percent?
+```Pixel``` is a static measurement, while ```percent``` and ```ems``` are relative measurements. The size of ems or percent depend on its ```parent```.
+
+	
 
 # Javascript
 
@@ -180,3 +216,45 @@ comments: true
 		else
 			window.addEventListener('load', async_load, false);
 	})();
+
+#### quickSort function
+	var quickSort = function(arr){
+		if(arr.length <=1){
+			return arr;
+		}
+		var pivotIndex = Math.floor(arr.length/2);
+		var pivot = arr.splice(pivotIndex,1)[0]; 
+		//[0] this is used to change the return object to number
+		//if var pivot = arr.splice(pivotIndex,1); this will return [1] as a object
+		var left = [];
+		var right = [];
+		for (var i = 0; i < arr.length; i++){
+			if(arr[i] < pivot){
+				left.push(arr[i]);
+			}else{
+				right.push(arr[i]);
+			}
+		}
+		return quickSort(left).concat([pivot],quickSort(right));
+	};
+	
+#### binarySearch function
+	function binary_search(arr,low,high,key){
+		if(low > high){
+			return -1;
+		}
+		var mid = parseInt((high + low)/2);
+		if(arr[mid] == key){
+			return mid;
+		}else if(arr[mid] > key){
+			high = mid - 1;
+			return binary_search(arr,low,high,key);
+		}else if(arr[mid] < key){
+			low = mid + 1;
+			return binary_search(arr,low,high,key);
+		}
+	};
+	
+	
+	
+	
