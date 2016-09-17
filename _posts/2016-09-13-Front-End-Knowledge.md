@@ -9,6 +9,11 @@ comments: true
 
 # HTML
 
+#### What is the purpore of having DOCTYPE?
+```<!DOCTYPE html>``` is declaration refers to a DTD ```Document Type Declaration.``` 
+* It tells the HTML validator which version of (X)HTML standard the web page coding is supposed to comply with. 
+* It specifies the rules for the markup language so that the browsers render the content correctly.
+
 #### What is three way handshake?
 A ```three-way-handshake``` is a method used in ```TCP/IP network``` to create a connection between a local host/client and server. Is is a ```three-step``` method that requires both client and the server to exchange ```SYN (Synchronize Sequence Numbers)``` and ```ACK (Acknowledgment)``` packets before actual data communication begins.
 
@@ -255,6 +260,71 @@ Chrome: ```blink```
 		}
 	};
 	
+#### JavaScript Data Types
+* Primitive Data Types: ```String```, ```Number```, ```Boolean```, ```Undefined```, ```Null```
+* Non-primitive Data Types: ```Object```, ```Array```, ```RegExp```
 	
+#### Set a DIV html content to "xxxx" which id ="ID" and set the color to black
+	var answer = document.getElementById("ID");
+	answer.innerHTML ="xxxx";
+	answer.style.color ="#000";
 	
+#### Look at the code below and guess what is the output and data type
+
+	var test = "11" + 2 - "1";
+	console.log(test);
+	console.log(typeof test);
+	
+output: ```111```;
+type: ```number```;
+
+
+	var test = "11" + 2 + "1";
+	console.log(test);
+	console.log(typeof test);
+	
+output: ```1121```;
+type: ```string```;
+
+#### Already know that the newArray = ["Hello","World], alert the outcome as "Hello World"
+	
+	alert(newArray.join(" ")) 
+	
+output: ```Hello World```
+
+	alert(newArray.join(""))
+	
+output: ```HelloWorld```
+
+#### var numberArray = [3,6,2,4,1,5], please answer in reverse order such as [5,1,4,2,6,3]; please answer in ascending order; please answer in descending order;
+
+	var numberArray = [3,6,2,4,1,5];
+	console.log(numberArray.reverse());
+	
+	var numberArray = [3,6,2,4,1,5];
+	console.log(numberArray.sort());
+	
+	var numberArray = [3,6,2,4,1,5];
+	numberArray.sort(function(a,b){
+		return b-a;
+	})
+	
+#### Combine two array and delete the second element
+
+	var arrayA = [a,b,c];
+	var arrayB = [d,e,f];
+	var arrayCombine = arrayA.concat(arrayB);
+	arrayCombine.splice(1,1);
+	
+#### Guess the output 
+
+	var num = 1;
+	function(){
+		console.log(num);
+		var num = 2;
+		console.log(num);
+	}
+	
+The output will be undefined and 2 since the first one will not point to one because the num was declared outside the function but the second one did declared inside the function so it will return 2.
+
 	
