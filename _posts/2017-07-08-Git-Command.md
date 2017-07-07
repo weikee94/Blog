@@ -13,3 +13,5 @@ comments: true
 * git checkout switchbranch
 * git log
 * git remote -v
+* git add
+* git commit -m "new message"
