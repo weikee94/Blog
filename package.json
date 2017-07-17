@@ -28,5 +28,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.0.0",
     "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "brace-expansion": "^1.1.8"
   }
 }
