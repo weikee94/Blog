@@ -3,16 +3,16 @@ layout: default
 title: Blog
 ---
 <div class="container">
-<div class="row blogTag col-md-6 col-md-offset-3">
-	<ul>
-	{% for posts in site.posts %}
-		 <li style="list-style:none">
-			 <img src="{{site.baseurl}}/images/note.png" style="width:25px; height:25px;">
-			 <span>{{ posts.date | date: '%B %d, %Y'}}</span>
-			 <a href="{{site.baseurl}}{{posts.url}}" title="{{ posts.title }}">{{ posts.title }}</a>
-		</li>
-	{% endfor %}
-	</ul>
-</div>
+	<div class="row blogTag col-md-6 col-md-offset-3">
+		<ul>
+		{% for posts in site.posts %}
+			<li style="list-style:none">
+				<img src="{{site.baseurl}}/images/note.png" style="width:25px; height:25px;">
+				<span>{{ posts.date | date: '%B %d, %Y'}}</span>
+				<a href="{{site.baseurl}}{{posts.url}}" title="{{ posts.title }}">{{ posts.title }}</a>
+			</li>
+		{% endfor %}
+		</ul>
+	</div>
 </div>
 
