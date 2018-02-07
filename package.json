@@ -1,35 +1,29 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "description": "Record down front end technologies ",
+  "description": "Front End Knowledge",
   "main": "gulpfile.js",
+  "dependencies": {
+    "brace-expansion": "^1.1.8",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^2.0.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vickyhaw94/Blog.git"
+    "url": "git+https://github.com/weikee94/Blog.git"
   },
-  "keywords": [
-    "HTML",
-    "CSS",
-    "JavaScript"
-  ],
-  "author": "Wei Kee",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vickyhaw94/Blog/issues"
+    "url": "https://github.com/weikee94/Blog/issues"
   },
-  "homepage": "https://github.com/vickyhaw94/Blog#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-jshint": "^2.0.4",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.0.0",
-    "gulp-uglify": "^2.0.0"
-  },
-  "dependencies": {
-    "brace-expansion": "^1.1.8"
-  }
+  "homepage": "https://github.com/weikee94/Blog#readme"
 }
